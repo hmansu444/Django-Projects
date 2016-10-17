@@ -1,11 +1,10 @@
 from django.shortcuts import get_object_or_404,render
-from django.shortcuts import render
 # Create your views here.
 #from django.http import HttpResponse
 from django.http import HttpResponseRedirect, HttpResponse
 from django.urls import reverse
 from django.views import generic
-from .models import Question
+from .models import Question,Choice
 
 class IndexView(generic.ListView):
     template_name = 'polls/index.html'
