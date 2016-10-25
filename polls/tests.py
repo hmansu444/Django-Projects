@@ -147,4 +147,4 @@ class QuestionMethodTests(TestCase):
 		time = timezone.now() - datetime.timedelta(hours=1)
 		recent_question = Question(pub_date=time)
 		self.assertIs(recent_question.was_published_recently(), True)
->>>>>>> 153bdc88a560e8024eb43a153eeeaa63945ba0c6
+#>>>>>>> 153bdc88a560e8024eb43a153eeeaa63945ba0c6
